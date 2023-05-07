@@ -32,7 +32,6 @@
     <string name="const_person_name" translatable="false">John Doe</string>
     <string name="const_uploaded_date">uploaded at 30 April 2022 00.00</string>
     <string name="const_story_description_hint">Write description here</string>
-    <string name="const_copyright" translatable="false">\@ 2022 Aprianto</string>
     <string name="const_greetings_auth_page">Hi, Welcome to</string>
     <string name="const_text_login">Login</string>
     <string name="const_text_email" translatable="false">Email</string>

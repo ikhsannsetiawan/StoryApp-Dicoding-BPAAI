@@ -55,9 +55,9 @@ class HomeFragment : Fragment(), SwipeRefreshLayout.OnRefreshListener {
         settingViewModel.getUserPreferences(Constanta.UserPreferences.UserToken.name)
             .observe(viewLifecycleOwner) { token ->
 
-                if (token == Constanta.preferenceDefaultValue) {
-                    (activity as MainActivity).routeToAuth()
-                }
+//                if (token == Constanta.preferenceDefaultValue) {
+//                    (activity as MainActivity).routeToAuth()
+//                }
 
                 tempToken = StringBuilder("Bearer ").append(token).toString()
                 viewModel?.loadStoryData(tempToken)

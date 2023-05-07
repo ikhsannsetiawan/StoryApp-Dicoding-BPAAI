@@ -48,7 +48,9 @@ class EditTextPassword : AppCompatEditText {
             }
 
             override fun afterTextChanged(edt: Editable?) {
-
+                charLength = edt.toString().length
+                error =
+                    if (charLength < 8) context.getString(R.string.UI_validation_password_rules) else null
             }
         })
     }

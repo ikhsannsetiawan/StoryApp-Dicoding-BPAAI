@@ -48,7 +48,11 @@ class EditTextEmail : AppCompatEditText {
             }
 
             override fun afterTextChanged(s: Editable) {
-                // Do nothing.
+                error = if (s.isNotEmpty()) {
+                    if (!s.toString().matches(Constanta.emailPattern)) {
+                        context.getString(R.string.UI_validation_invalid_email)
+                    } else null
+                } else null
             }
         })
     }
